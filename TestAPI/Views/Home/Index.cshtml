@@ -1,0 +1,16 @@
+﻿@using System.Data
+@model dynamic
+
+@{
+    ViewData["Title"] = "Fetch From API";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Location Name : @Model.location.name</h1>
+    <h1 class="display-4">Location Region : @Model.location.region</h1>
+    <h1 class="display-4">Location Country : @Model.location.country</h1>
+    <h1 class="display-4">Location Localtime : @Model.location.localtime</h1>
+    <h1 class="display-4">Current wind_mph : @Model.current.wind_mph</h1>
+    <h1 class="display-4">Current wind_kph : @Model.current.wind_kph</h1>
+    
+</div>
